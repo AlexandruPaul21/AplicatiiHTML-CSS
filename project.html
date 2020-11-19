@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .title {
+                margin: 50px 0 0 0;  
+                border: 5px solid red;
+                border-radius: 30px;
+                /*margin: 100px;*/
+                padding: 20px;
+                height: auto;
+                width: auto;
+                /*outline: thick solid blue;*/
+                color: black;
+                text-align: center;
+                text-decoration: underline;
+                word-spacing: 10px;
+                font-style: oblique;
+                font-size: 40px;
+            }
+            .normal_txt {
+                position: realtive;
+                border: 1px solid blue;
+                margin: 50px;
+                padding: 20px;
+                color: black;
+                text-align:left;
+                font-size: 20px;
+                height: 200px;
+                width: 600px;
+                overflow: scroll;
+                float: left;
+            }
+            .textb{
+                margin:50px;
+                padding: 20px;
+                text-indent: 10px;
+                border: 1px solid lime;
+                height: 100px;
+                width: 500px;
+                font-size: 20px;
+                overflow: scroll;
+                float: right;
+            }
+            a.st1:active {
+                color: red;
+            }
+            a.st1:visited {
+                color: blueviolet;
+            }
+            a.st1:hover {
+                color: coral;
+                background-color: lime;
+            }
+            a.st1:active {
+                color: pink;
+            }
+            ol.stilus{
+                list-style-type: circle;
+                border: none;
+                margin: 50px;
+                font-size: 20px;
+            }
+            div.first_child{
+                text-transform: capitalize;
+            }
+            table, td, tr, th {
+                margin: 50px;
+                width: 300px;
+                border: 1px solid red;
+            }
+            tr:nth-child(even){
+                background-color: grey;
+            }
+            tr:hover {
+                background-color: violet;
+            }
+            ul.oriz{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color:#333;
+            }
+            li {
+                float: left;
+            }
+            li a.st2, .dropbtn{
+                display: inline-block;
+                text-align: center;
+                padding: 14px 16px;
+                color: white;
+                text-decoration: none;
+            }
+            a.st2:hover {
+                background-color:red;
+            }
+            #active{
+                background-color: green;
+            }
+            .bar{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                height: 100%;
+                width: 100%;
+            }
+            li.dropdown {
+                display: inline-block;
+            }
+            li a.st2:hover, .dropdown:hover .dropbtn{
+                background-color: red;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160;
+                box-shadow: 0px 8px 16px rgb(0,0,0,0.2);
+                padding: 14px 16px;
+                z-index: 1;
+            }
+            .dropdown-content a.st2{
+                padding: 12px 16px;
+                text-decoration: none;
+                color: black;
+                display: block;
+                text-align: left;
+            }
+            .dropdown-content a.st2:hover{
+                background-color: purple;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            ul.vert {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 300px;
+                border: 1px solid #333;
+                background-color: #333;
+            }
+            li.vrt{
+                float: none;
+                width: 300px;
+                height: 40px;
+            }
+            li.vrt a.st3 {
+                display: block;
+                padding: 8px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                text-align: center;
+                color: white;
+            }
+            a.st3:hover{
+                background-color: grey;
+            }
+            .dubitz {
+                border: none;
+                margin: 100px 0 0 50px;
+                width: 300px;
+                height: 280px;
+                position: absolute;
+            }
+            .raph {
+                border: 5px solid #333;
+                margin: 100px 0 0 350px;
+                width: 80%;
+                height: 272px;
+                position: absolute;
+                font-size: 20px;
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bar">
+            <ul class="oriz">
+                <li><a href="" class="st2" id="active">Home</a></li>
+                <li class="dropdown"><a href="" class="st2" class="dropbtn">History</a>
+                    <div class="dropdown-content">
+                        <a class="st2" href="#">Linkl</a>
+                        <a class="st2" href="#">Link2</a>
+                        <a class="st2" href="#">Link3</a>
+                    </div>
+                </li>
+                <li style="float:right"><a href="" class="st2">About</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <span>Ana are mere</span>
+            <div class="dropdown-content"><p>Teapa</p></div>
+        </div>
+        <div class="title">
+            <p style="cursor:crosshair">Un text random</p>
+        </div>
+        <div class="normal_txt">
+            <p>Serus! Io's Alex</p>
+            <p>Link spre principalele profiluri</p>
+            <p><a href="https://www.pbinfo.ro/profil/Alex007007" target="_blank" class="st1">PbInfo</a></p>
+            <p><a href="https://www.infoarena.ro/utilizator/AlexandruPaul" target="_blank" class="st1">Infoarena</a></p>
+            <p><a href="https://www.frf-ajf.ro/salaj/arbitri/srbu-alexandru-12267.html" target="_blank" class="st1">AJF SALAJ</a></p>
+        </div>
+        
+        <div class="textb">
+            <p>
+            La rectificarea bugetară care urmează să fie adoptată în perioada următoare de Guvern vor fi majorate bugetele de la ministerul Dezvoltării cu un miliard de lei, la ministerul Agriculturii, cu 1,1 miliarde, 
+            dintre care 160 de milioane sunt despăgubiri pentru cei care au fost afectați de secetă, iar la fondul unic de asigurări de sănătate bugetul va fi suplimentat cu 1,1 miliarde de lei. Ministerul Sănătății primește 1,2 miliarde de lei.
+            </p>
+        </div>
+        <table>
+            <tr>
+                <th>Nume</th>
+                <th>Prenume</th>
+                <th>Media</th>
+            </tr>
+            <tr>
+                <td>Xulescu</td>
+                <td>Alex</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Ygrechescu</td>
+                <td>Alex</td>
+                <td>9.9</td>
+            </tr>
+            <tr>
+                <td>Beutescu</td>
+                <td>Andrei</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Protescu</td>
+                <td>Mihai</td>
+                <td>5</td>
+            </tr>
+        </table>
+        <div class="dubitz">
+            <ul class="vert">
+                <li class="vrt"><a class="st3" href="">Acasa</a></li>
+                <li class="vrt"><a id="active" class="st3" href="">Date despre autor</a></li>
+                <li class="vrt"><a class="st3" href="">Date despre opera</a></li>
+                <li class="vrt"><a class="st3" href="">Titlu</a></li>
+                <li class="vrt"><a class="st3" href="">Tema</a></li>
+                <li class="vrt"><a class="st3" href="">Simetrie</a></li>
+                <li class="vrt"><a class="st3" href="">Prozodie</a></li>
+            </ul>
+        </div>
+        <div class="raph">
+            <p>Liviu Rebreanu
+            Scriitor interbelic, romancier, nuvelist, dramaturg, traducător şi academician.</p>
+            <p>
+            1885 — La 27 noiembrie se naşte în satul Târlişua (din fostul comitat Solnoc Dăbâca, azi județul Bistriţa-Năsăud) Liviu Rebreanu, primul dintre cei 14 copii ai învăţătorului Vasile Rebreanu (1863-1914) şi ai Ludovicăi (născută Diuganu). În tinereţe, mama sa (1865-1945) era pasionată de teatru, fiind considerată "primă diletantă" pe scena din Becleanul de baştină. Ambii părinţi constituie modelele familiei Herdelea care apare în Ion, Răscoala, Gorila.
+            </p>
+            <p>
+            1889 — Familia Rebreanu se mută în comuna Maieru, pe valea Someşului.
+            </p>
+            <p>
+            1891 — Începe cursurile şcolii primare în Maieru.
+            </p>
+            <p>
+            1895 — Urmează două clase la Gimnaziul grăniceresc din Năsăud.
+            </p>
+            <p>
+            1897 — Se transferă la Liceul german din Bistriţa unde a urmat încă trei clase.
+            </p>
+            <p>
+            1898 — În clasa a IV-a, scrie "întâia şi ultima poezie". Fascinat de o tânără actriţă dintr-o trupă ambulantă ungurească, scrie un vodevil după modelul celui văzut. Mai târziu, aflat în Budapesta, a cultivat, fără succes, acelaşi gen dramatic.
+            </p>
+            <p>
+            1899 — Familia Rebreanu se mută în satul Prislop.
+            </p>
+            <p>
+            1900 — Începe Şcoala Reală Superioară de Honvezi din Sopron (Ödenburg, în nord-vestul Ungariei, lângă graniţa cu Austria). La sfârşitului anului I a obţinut calificativul "eminent". Ca şi la Bistriţa, a manifestat o înclinaţie deosebită pentru studiul limbilor străine.
+            </p>
+            <p>
+            1902 — După abateri de la regulamentul școlii, a fost retrogradat din funcţia de chestor. La sfârşitul celui de-al doilea an de şcoală reală, a primit doar distincţia simplă. În cel de-al treilea an a pierdut şi distincţia simplă, din cauza mediei scăzute la purtare.
+            </p>
+        </div>
+        <form action="/action_page.php">
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" value="John"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
